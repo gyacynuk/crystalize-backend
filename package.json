@@ -6,6 +6,9 @@
   "author": "Griffin Yacynuk <gyacynuk@gmail.com>",
   "license": "MIT",
   "private": false,
+  "engines": {
+    "node": ">=8.0.0"
+  },
   "nodemonConfig": {
     "exec": "yarn start-dev",
     "watch": [
@@ -40,6 +43,7 @@
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "googleapis": "^51.0.0",
     "mongoose": "^5.9.15"
   },
   "devDependencies": {

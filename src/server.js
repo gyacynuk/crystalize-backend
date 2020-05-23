@@ -21,3 +21,9 @@ connection.once('open', () => {
 app.listen(portNumber, () => {
     console.log(`Server is running on port: ${portNumber}`);
 });
+
+app.get('/', (req, res) => {
+    res.send("Hello World!")
+})
+
+export { app };
