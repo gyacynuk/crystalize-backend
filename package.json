@@ -29,11 +29,11 @@
     "testEnvironment": "node"
   },
   "scripts": {
-    "start": "yarn run prod",
+    "start": "node ./dist/server",
+    "start-prod": "yarn run prod",
     "start-dev": "yarn run dev",
-    "dev": "NODE_ENV=development yarn build && yarn server",
-    "prod": "NODE_ENV=production yarn build && yarn server",
-    "server": "node ./dist/server",
+    "dev": "NODE_ENV=development yarn build && yarn start",
+    "prod": "NODE_ENV=production yarn build && yarn start",
     "build": "yarn clean && yarn babel src -d dist",
     "clean": "yarn rimraf dist",
     "test": "yarn jest",
